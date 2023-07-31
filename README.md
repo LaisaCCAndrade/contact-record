@@ -1,12 +1,15 @@
 <h1 align="center"> 🏆 T15 - 🏁 Desafio Fullstack - M6 </h1>
 
-<h3 align="center"> 
-  My Contacts 🚀 
-</h3>
+# My Contacts 🚀 
 
-# Aplicação de Tabela de Contatos
+## Funcionalidades
 
-Uma aplicação de tabela de contatos que permite visualizar, editar e excluir contatos. A tabela de contatos é renderizada usando a biblioteca Material-UI.
+- Listar todos os contatos cadastrados
+- Visualizar detalhes de um contato específico
+- Editar os detalhes de um contato
+- Excluir um contato
+- Autenticação de usuário (login e registro)
+- Criar, Ler, Atualizar e Excluir (CRUD) contatos
 
 ## Tecnologias Utilizadas
 
@@ -20,14 +23,60 @@ Uma aplicação de tabela de contatos que permite visualizar, editar e excluir c
   - Node.js
   - Express.js
 
-## Funcionalidades
+## Endpoints da API
 
-- Listar todos os contatos cadastrados
-- Visualizar detalhes de um contato específico
-- Editar os detalhes de um contato
-- Excluir um contato
-- Autenticação de usuário (login e registro)
-- Criar, Ler, Atualizar e Excluir (CRUD) contatos
+# Usuários
+- Criar Usuário
+Método: POST
+Rota: /users
+Descrição: Cria um novo usuário com os dados fornecidos.
+
+- Listar Usuários
+Método: GET
+Rota: /users
+Descrição: Retorna uma lista de todos os usuários registrados.
+
+- Listar Usuário por ID
+Método: GET
+Rota: /users/profile/:id
+Descrição: Retorna os detalhes de um usuário específico com base em seu ID.
+
+- Atualizar Usuário
+Método: PATCH
+Rota: /users/:id
+Descrição: Atualiza os dados de um usuário existente com base em seu ID.
+
+- Deletar Usuário
+Método: DELETE
+Rota: /users/:id
+Descrição: Deleta um usuário existente com base em seu ID.
+
+- Autenticação
+Criar Token de Acesso (Login)
+Método: POST
+Rota: /login
+Descrição: Cria um token de acesso para um usuário com base em suas credenciais de login.
+
+- Contatos
+Criar Contato
+Método: POST
+Rota: /contacts/:id
+Descrição: Cria um novo contato para um usuário específico com base em seu ID.
+
+- Listar Contatos de um Usuário
+Método: GET
+Rota: /contacts/:id
+Descrição: Retorna uma lista de contatos pertencentes a um usuário específico com base em seu ID.
+
+- Atualizar Contato
+Método: PATCH
+Rota: /contacts/:id
+Descrição: Atualiza os dados de um contato existente com base em seu ID.
+
+- Deletar Contato
+Método: DELETE
+Rota: /contacts/:id
+Descrição: Deleta um contato existente com base em seu ID.
 
 ## Instalação
 
