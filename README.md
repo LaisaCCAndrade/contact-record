@@ -54,6 +54,9 @@ npm start
 http://localhost:3001
 ```
 
+## Observação
+- Não se esqueça de rodar o backend e depois o frontend
+
 ## 🤝 Contribuição
 
 - **Laisa Andrade** - [Github](https://github.com/LaisaCCAndrade)
