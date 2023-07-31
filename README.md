@@ -11,12 +11,14 @@ Uma aplicação de tabela de contatos que permite visualizar, editar e excluir c
 ## Tecnologias Utilizadas
 
 - Front-end:
-  - React: Biblioteca JavaScript para construir interfaces de usuário interativas.
-  - Material-UI: Biblioteca de componentes React com temas e estilos pré-definidos.
+  - React
+  - Material-UI
+  - Axios
+  - JSON Web Tokens (JWT)
 
 - Back-end:
-  - Node.js: Ambiente de tempo de execução do JavaScript no servidor.
-  - Express.js: Framework web leve para construir o servidor e rotas.
+  - Node.js
+  - Express.js
 
 ## Funcionalidades
 
@@ -24,13 +26,8 @@ Uma aplicação de tabela de contatos que permite visualizar, editar e excluir c
 - Visualizar detalhes de um contato específico
 - Editar os detalhes de um contato
 - Excluir um contato
-
-## Estrutura do Projeto
-
-- `src/components`: Contém os componentes da interface do usuário.
-- `src/services`: Contém os serviços para lidar com a lógica de negócios relacionados aos contatos.
-- `src/pages`: Contém as páginas principais da aplicação, como a página da tabela de contatos e a página de edição do contato.
-- `src/App.js`: Componente principal que define as rotas e a estrutura geral da aplicação.
+- Autenticação de usuário (login e registro)
+- Criar, Ler, Atualizar e Excluir (CRUD) contatos
 
 ## Instalação
 

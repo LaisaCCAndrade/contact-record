@@ -68,7 +68,7 @@ export default function DataTable({ users }: { users: IUser[] }) {
                   <StyledTableCell>
                     <Stack direction="row" spacing={2}>
                       <Button
-                        className="bg-red-400 w-[100%]"
+                        className="bg-green-400 w-[100%]"
                         variant="contained"
                         color="success"
                         startIcon={<EditIcon />}
