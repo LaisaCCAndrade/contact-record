@@ -78,6 +78,25 @@
     - Rota: /contacts/:id
     - Descrição: Deleta um contato existente com base em seu ID.
 
+## Exemplo do corpo da requisição
+
+- Request (application/json)
+    - Headers
+        Authorization: Bearer [access_token]
+    - Body
+        {
+            "name": "ExampleName",
+        }
+- Response 200 (application/json)
+    - Body
+        {
+            "id": "tokengerado",
+            "name":"ExampleName",
+            "email" : "example@mail.com",
+            "phone": 1158874559,
+            "creates_at": "2023-08-05T05:21:11.980Z"
+        }
+
 ## Instalação
 
 1. Clone o repositório: 
@@ -90,12 +109,22 @@ git clone https://github.com/LaisaCCAndrade/contact-record
 npm install
 ``` 
 
-3. Inicie o servidor:
+3. Gere as migrations:
 ```bash
-npm start
+npm run typeorm migration:generate -- -d ./src/data-souce ./src/migrations/CreateTable
 ```
 
-4. Abra a aplicação no navegador:
+4. Rode as migrations:
+```bash
+npm run typeorm migration:run -- -d ./src/data-source
+```
+
+5. Inicie o servidor:
+```bash
+npm run dev
+```
+
+6. Abra a aplicação no navegador:
 ```bash
 http://localhost:3001
 ```
