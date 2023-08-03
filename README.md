@@ -102,7 +102,7 @@
             "name":"ExampleName",
             "email": "example@mail.com",
             "phone": 1158874559,
-            "creates_at": "2023-08-05T05:21:11.980Z"
+            "createdAt": "2023-08-05T05:21:11.980Z"
         }
       ```
 
