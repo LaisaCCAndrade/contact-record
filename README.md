@@ -82,7 +82,9 @@
 
 - Request (application/json)
     - Headers
+      ```bash
         Authorization: Bearer [access_token]
+      ```
     - Body
       ```bash
         {
