@@ -34,6 +34,7 @@ const userNavigation = [
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
+
 const style = {
   position: "absolute" as const,
   top: "50%",
@@ -68,8 +69,8 @@ export default function Example() {
       })
       .then((res) => setContacts(res.data));
   };
+
   function handleCadastro() {
-    console.log(name, email, phone);
     axios
       .post(
         `http://localhost:3000/contacts/${decode!.sub}`,
@@ -349,7 +350,7 @@ export default function Example() {
         </header>
         <main>
           <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-            <DataTable users={contacts} />
+            <DataTable users={contacts} setUsers={setContacts} />
           </div>
         </main>
       </div>

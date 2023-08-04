@@ -3,6 +3,7 @@ import { createContactsService } from "../services/contacts/createContacts.servi
 import { listContactsService } from "../services/contacts/listContacts.service";
 import { updateContactService } from "../services/contacts/updateContact.service";
 import { deleteContactService } from "../services/contacts/deleteContact.service";
+import { Contacts } from "../entities/contacts.entities";
 
 const createContactController = async (req: Request, res: Response) => {
   const userId = res.locals.userId;
@@ -10,7 +11,6 @@ const createContactController = async (req: Request, res: Response) => {
     const newContact = await createContactsService(req.body, userId);
     return res.status(201).json(newContact);
   } catch (error) {
-    // Trate os erros aqui, se necessário
     console.log(error);
     return res.status(500).json({ error: "Internal server error" });
   }
