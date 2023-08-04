@@ -82,20 +82,29 @@
 
 - Request (application/json)
     - Headers
+      
+      ```bash
         Authorization: Bearer [access_token]
+      ```
     - Body
+      
+      ```bash
         {
             "name": "ExampleName",
         }
+      ```
 - Response 200 (application/json)
     - Body
+      
+      ```bash
         {
             "id": "tokengerado",
             "name":"ExampleName",
-            "email" : "example@mail.com",
+            "email": "example@mail.com",
             "phone": 1158874559,
-            "creates_at": "2023-08-05T05:21:11.980Z"
+            "createdAt": "2023-08-05T05:21:11.980Z"
         }
+      ```
 
 ## Instalação
 
